@@ -673,7 +673,7 @@ module ActiveMerchant #:nodoc:
             :PWD       => AppConfig.gateways.paypal_express.password,
             :SIGNATURE => AppConfig.gateways.paypal_express.signature,
 
-            # :SUBJECT => merchant_email,
+            :SUBJECT => merchant_email,
             :PAYMENTREQUEST_0_SELLERPAYPALACCOUNTID => merchant_email,
 
             :RETURNURL => purchase_options[:return_url],
